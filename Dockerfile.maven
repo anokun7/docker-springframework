@@ -1,0 +1,2 @@
+FROM maven:onbuild
+CMD ["java", "-jar", "target/helloWorld-1.jar"]
