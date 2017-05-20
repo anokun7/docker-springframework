@@ -5,11 +5,3 @@ services:
     image: anoop/spring-boot-demo:latest
     deploy:
       replicas: 10
-    networks:
-      - ucp-hrm
-    labels:
-      - com.docker.ucp.mesh.http.8080=external_route=http://${DOMAIN},internal_port=8080
-
-networks:
-  ucp-hrm:
-    external: true
