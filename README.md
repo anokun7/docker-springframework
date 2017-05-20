@@ -1,9 +1,7 @@
 # docker-springframework
 
 ```
-$ docker system prune -af
-$ docker build -t test -f Dockerfile.maven .
-$ docker run test
-Hello world!
-$
+$ docker build -t test .
+$ docker run -p 8080:8080 test
+$ for i in {0..9}; do curl -s localhost:8080 ; echo "" ; sleep 1 ; done
 ```
