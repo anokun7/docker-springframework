@@ -11,6 +11,6 @@ public class HelloController {
 
     @RequestMapping("/")
     public String index() {
-        return "Hello from " + System.getenv("HOSTNAME") + "<hr/>";
+        return "Hello from " + System.getenv("HOSTNAME") + "\r";
     }
 }
