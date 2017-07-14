@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   boot:
-    image: anoop/spring-boot-demo:latest
+    image: anoop/spring-boot-demo:${version:-latest}
     ports:
       - 8080
     deploy:
